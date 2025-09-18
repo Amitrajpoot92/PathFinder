@@ -111,7 +111,7 @@ const InternshipsJobs = () => {
       {/* Title Section */}
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center flex items-center justify-center gap-3">
         <Briefcase className="text-pink-500" size={40} />
-        Internship & Job Screener
+        Internship & Job Finder
       </h1>
       <p className="text-gray-400 max-w-2xl text-center mb-12">
         Find <span className="text-pink-400">personalized internships</span> and{" "}
