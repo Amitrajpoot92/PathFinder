@@ -124,7 +124,7 @@ const Resources = ({ resources = defaultResources }) => {
 Get real-time feedback and practical exercises to excel in professional interactions.
         </p>
         <button className="bg-gradient-to-r from-indigo-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold transition-transform duration-300 hover:scale-105">
-          Start Now
+          Coming Soon
         </button>
       </div>
 

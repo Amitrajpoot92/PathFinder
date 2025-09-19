@@ -2,12 +2,12 @@
 import heroImage from "../assets/hero.webp";
 import { Link } from "react-router-dom";
 import {
-  FaUsers,
-  FaBookOpen,
-  FaUserTie,
-  FaClipboardList,
-  FaFolderOpen,
-  FaPuzzlePiece,
+  FaCompass,      // Career Guidance
+  FaBookOpen,         // Resources
+  FaFileAlt,      // Resume Analyzer
+  FaTrophy,       // Hackathon Tracker
+  FaComments,     // Mock Interviews
+  FaBriefcase,    // Internships & Jobs
 } from "react-icons/fa";
 import { useState } from "react";
 import AuthModal from "../components/AuthModal";
@@ -87,44 +87,39 @@ const Home = () => {
 
           {/* Feature Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Career Roadmaps */}
+            {/* Career Guidance */}
             <Link to="/chattapp">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
-                <FaUsers className="text-4xl mx-auto text-white-400" />
+                <FaCompass className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
-                  Career Roadmaps
+                  Career Guidance
                 </h3>
                 <p className="text-gray-300">
-                  Step-by-step learning paths designed for every career field –
-                  Web Development, Data Science, Cloud, and more.
+                  Get AI-powered step-by-step guidance tailored to your goals.
                 </p>
               </div>
             </Link>
 
-            {/* Courses */}
+            {/* Resources */}
             <Link to="/courses">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
                 <FaBookOpen className="text-4xl mx-auto text-white-400" />
-                <h3 className="text-xl font-semibold mt-4 mb-2">
-                  Best Courses & Resources
-                </h3>
+                <h3 className="text-xl font-semibold mt-4 mb-2">Resources</h3>
                 <p className="text-gray-300">
-                  Discover top free and paid courses from trusted platforms to
-                  upskill faster.
+                  Curated guides and learning resources to help you grow faster.
                 </p>
               </div>
             </Link>
 
-            {/* Resume Guidance */}
+            {/* Resume Analyzer */}
             <Link to="/resume-guidance">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
-                <FaUserTie className="text-4xl mx-auto text-white-400" />
+                <FaFileAlt className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
-                  Resume Guidance
+                  Resume Analyzer
                 </h3>
                 <p className="text-gray-300">
-                  Analyze your resumes with expert tips to stand out from
-                  the crowd.
+                  Upload your resume and get insights, match score, and tips.
                 </p>
               </div>
             </Link>
@@ -132,12 +127,12 @@ const Home = () => {
             {/* Hackathon & Contest Tracker */}
             <Link to="/hack">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
-                <FaClipboardList className="text-4xl mx-auto text-white-400" />
+                <FaTrophy className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
                   Hackathon & Contest Tracker
                 </h3>
                 <p className="text-gray-300">
-                    Track, Compete, and Showcase Your Skills
+                  Discover upcoming, live, and past hackathons & contests.
                 </p>
               </div>
             </Link>
@@ -145,13 +140,12 @@ const Home = () => {
             {/* Mock Interviews */}
             <Link to="/mock-interview">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
-                <FaFolderOpen className="text-4xl mx-auto text-white-400" />
+                <FaComments className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
                   Mock Interviews
                 </h3>
                 <p className="text-gray-300">
-                  Practice technical & HR interviews with real-time feedback to
-                  become job-ready.
+                  Practice HR & technical interviews with feedback.
                 </p>
               </div>
             </Link>
@@ -159,13 +153,12 @@ const Home = () => {
             {/* Internship & Jobs */}
             <Link to="/internships-jobs">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
-                <FaPuzzlePiece className="text-4xl mx-auto text-white-400" />
+                <FaBriefcase className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
-                  Internship & Job Finder
+                  Internships & Jobs
                 </h3>
                 <p className="text-gray-300">
-                  Find personalized job and internship opportunities based on
-                  your skills.
+                  Find personalized internships and jobs based on your skills.
                 </p>
               </div>
             </Link>
