@@ -137,8 +137,7 @@ const Home = () => {
                   Hackathon & Contest Tracker
                 </h3>
                 <p className="text-gray-300">
-                  Boost your communication, teamwork, leadership, and professional
-                  etiquette.
+                    Track, Compete, and Showcase Your Skills
                 </p>
               </div>
             </Link>

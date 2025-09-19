@@ -26,27 +26,27 @@ export default function Footer() {
           <ul className="flex flex-col gap-2">
             <li>
               <a href="/" className="hover:text-pink-500 transition-colors">
-                🏠 Home
+                Home
               </a>
             </li>
             <li>
               <a href="/resume-guidance" className="hover:text-pink-500 transition-colors">
-                📄 Resume Guidance
+                Resume Guidance
               </a>
             </li>
             <li>
               <a href="/courses" className="hover:text-pink-500 transition-colors">
-                📚 Courses
+                Courses
               </a>
             </li>
             <li>
               <a href="/internships-jobs" className="hover:text-pink-500 transition-colors">
-                💼 Internships & Jobs
+                Internships & Jobs
               </a>
             </li>
             <li>
               <a href="/mock-interview" className="hover:text-pink-500 transition-colors">
-                🎤 Mock Interviews
+                Mock Interviews
               </a>
             </li>
           </ul>
