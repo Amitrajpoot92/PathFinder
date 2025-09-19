@@ -40,7 +40,7 @@ const NavbarMain = () => {
             Resume Guidance
           </NavLink>
           <NavLink to="/courses" onClick={closeMenu}>
-            Courses
+             Resources
           </NavLink>
           <NavLink to="/mock-interview" onClick={closeMenu}>
             Mock Interview
