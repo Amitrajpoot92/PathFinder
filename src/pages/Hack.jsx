@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AlertTriangle, Calendar, Star, MapPin } from "lucide-react";
 
@@ -41,6 +41,11 @@ const Hack = () => {
       setLoading(false);
     }
   };
+
+  // Fetch all contests on component mount
+  useEffect(() => {
+    fetchContests();
+  }, []);
 
   return (
     <motion.div
@@ -94,9 +99,13 @@ const Hack = () => {
       {showResults && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
           {loading ? (
-            <p className="text-gray-400 col-span-full text-center">⏳ Loading contests...</p>
+            <p className="text-gray-400 col-span-full text-center">
+              ⏳ Loading contests...
+            </p>
           ) : contests.length === 0 ? (
-            <p className="text-gray-400 col-span-full text-center">No contests found.</p>
+            <p className="text-gray-400 col-span-full text-center">
+              No contests found.
+            </p>
           ) : (
             contests.map((item, idx) => (
               <motion.div
@@ -104,18 +113,23 @@ const Hack = () => {
                 whileHover={{ scale: 1.03 }}
                 className="bg-[#1a103d] p-6 rounded-xl shadow-lg hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 transition-transform"
               >
-                <h3 className="text-xl font-bold mb-2 text-pink-400">{item.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-pink-400">
+                  {item.title}
+                </h3>
                 <p className="text-gray-300">
                   <strong>Platform:</strong> {item.platform}
                 </p>
                 <p className="text-gray-300 flex items-center gap-1">
-                  <Calendar size={14} /> <strong>Start:</strong> {item.start_date || "N/A"}
+                  <Calendar size={14} /> <strong>Start:</strong>{" "}
+                  {item.start_date || "N/A"}
                 </p>
                 <p className="text-gray-300 flex items-center gap-1">
-                  <Calendar size={14} /> <strong>End:</strong> {item.end_date || "N/A"}
+                  <Calendar size={14} /> <strong>End:</strong>{" "}
+                  {item.end_date || "N/A"}
                 </p>
                 <p className="text-gray-300 flex items-center gap-1">
-                  <Star size={14} /> <strong>Status:</strong> {item.status || item.phase || "N/A"}
+                  <Star size={14} /> <strong>Status:</strong>{" "}
+                  {item.status || item.phase || "N/A"}
                 </p>
                 <p className="text-gray-300 flex items-center gap-1">
                   <MapPin size={14} /> {item.location || "Remote"}

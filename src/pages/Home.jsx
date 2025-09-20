@@ -111,12 +111,12 @@ const Home = () => {
               </div>
             </Link>
 
-            {/* Resume Analyzer */}
+            {/* Resume Guidance */}
             <Link to="/resume-guidance">
               <div className="bg-[#1a103d] p-8 rounded-xl text-center shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-pink-500 cursor-pointer h-full flex flex-col justify-between">
                 <FaFileAlt className="text-4xl mx-auto text-white-400" />
                 <h3 className="text-xl font-semibold mt-4 mb-2">
-                  Resume Analyzer
+                  Resume Guidance
                 </h3>
                 <p className="text-gray-300">
                   Upload your resume and get insights, match score, and tips.
